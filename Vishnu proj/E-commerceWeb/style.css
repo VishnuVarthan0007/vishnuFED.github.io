@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      } 
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(34, 6, 57, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+h1{
+    font-size: 30px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: large;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.toggle-menu-bar{
+    display: none;
+}
+
+/*side navbar styling*/
+.side-navbar{
+    background-color: black;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -40%;  /*for transition usage ...left -40% means it goes to the left side*/  
+    padding: 20px;
+    color: white;
+    transition: 1s;
+    z-index: 2;
+    
+}
+.side-navbar-link1{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;  
+  
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;     
+}
+.head1 h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.head1 p{
+    font-size: 18px;
+}
+.header button{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 20px 0px 0px 0px;
+  }
+  .header button:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 15px;
+}
+.service-container-2 div{
+    background-color:  #f2f4f7;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.newarrival{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.newarrival-container{
+   position: relative;
+   flex-basis: 20%;   
+}
+.newarrival-container button{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    background-color:rgb(244, 241, 241) ;
+    border-radius: 12px;
+    border: none;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+.newsletter input{
+    width: 50%;
+    height: 30px;
+    border: solid black;
+}
+
+.newsletter button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.newsletter button:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 40px;
+    width: 100%;
+    margin-left: -20px;
+    margin-bottom: -20px;
+   
+}
+
+/*for collection page styling*/
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.product-search input:hover{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img{
+    border-radius: 10px;
+}
+
+/*Contact Page*/
+.contact{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 50%;
+    width: 70%;
+    margin-left: 200px;  
+    border-radius: 10px;
+}
+.contact-container div{
+    margin: 20px;
+}
+.contact input{
+    height: 50px;
+    width: 700px;
+    margin-top: 20px;
+}
+.btn button{
+    background-color: rgb(7, 133, 133);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    outline: none;
+    width: 80px;
+}
+.btn button:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.head h1{
+    margin-top: 20px;
+}
+.msg input{
+    height: 85px;
+}
+
+
+
+
+/* media query */
+@media screen and (max-width:600px) {
+    .toggle-menu-bar{
+        display: block;
+}
+.navbar-links{
+    display: none;
+}
+.header-img{
+    display: none;     /* header image */
+}
+.service-container-1{
+    display: none;
+}
+.service-container-2{
+    flex-direction: column;
+}
+
+}
+/*contact page*/
+@media screen and (max-width:1100px){
+.contact{
+    margin-right: auto;
+    margin-left: auto;
+    height: 400px;
+    width: 600px;
+    z-index: 1;
+}
+
+.contact input{
+    width: 400px;
+    height:auto;
+}
+}
+@media screen and (max-width:600px) {
+.contact{
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
+    
+}
+
+.cont input{
+    width: 200px;
+    height: auto;
+}
+
+}
+@media screen and (max-width:320px) {
+
+ .navbar{
+    width: 300px;
+    margin-left: -20px;
+ }
+ .head1{
+    margin-left: 50px;
+ }   
+}
